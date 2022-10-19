@@ -9,46 +9,51 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-* { margin: 0; 
-    padding: 0;
-    background-color: purple;
-    color:ivory;
+
+* { 
+  margin: 0px; 
+  padding: 0px;
+  
 }
 
-
 /* Iteração 1 768px */
-
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  background-color: purple;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
 nav{       
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: purple;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: 80px;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: purple;    
+}    
 
+ footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+ }
 /* Iteração 2 */
 @media all and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    height: 140px;
+    font-size: xx-large;
+    font-weight: 500;
+  }
 }
 
 /* Iteração 3 */
 @media all and (min-width: 1024px) and (max-width: 1440px) {
+
 }
 
 /* Iteração 4 */
 @media all and (min-width: 1440px) {
 }
-
-
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-}
-
-body { background: #fff;color:#1A1A1A; }
-h2 {font-size: 6rem; }
-h3 {font-size: 4rem; }
-h4 {font-size: 3rem; }
-h5 {font-size: 1.2rem; }
-hr{ width: 60%;}
